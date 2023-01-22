@@ -1,5 +1,5 @@
-appId: 'helioslauncher'
-productName: 'Helios Launcher'
+appId: 'medevialauncher'
+productName: 'Médévia Launcher'
 artifactName: '${productName}-setup-${version}.${ext}'
 
 copyright: 'Copyright © 2018-2022 Daniel Scalzi'
@@ -39,13 +39,13 @@ mac:
 # Linux Configuration
 linux: 
   target: 'AppImage'
-  maintainer: 'Daniel Scalzi'
-  vendor: 'Daniel Scalzi'
-  synopsis: 'Modded Minecraft Launcher'
-  description: 'Custom launcher which allows users to join modded servers. All mods, configurations, and updates are handled automatically.'
+  maintainer: 'Médévia team'
+  vendor: 'Médévia team'
+  synopsis: 'Launcher for medevia server (medevia.net)'
+  description: 'Custom launcher which allows users to join the french medevia server. All mods, configurations, and updates are handled automatically by the Médévia team.'
   category: 'Game'
 
 
 directories:
   buildResources: 'build'
-  output: 'dist'
+  output: 'compiled-software'
