@@ -615,7 +615,7 @@ function refreshAuthAccountSelected(uuid){
 }
 
 const settingsCurrentMicrosoftAccounts = document.getElementById('settingsCurrentMicrosoftAccounts')
-const settingsCurrentMojangAccounts = document.getElementById('settingsCurrentMojangAccounts')
+const settingsCurrentMedeviaAccounts = document.getElementById('settingsCurrentMedeviaAccounts')
 
 /**
  * Add auth account elements for each one stored in the authentication database.
@@ -667,7 +667,7 @@ function populateAuthAccounts(){
     })
 
     settingsCurrentMicrosoftAccounts.innerHTML = microsoftAuthAccountStr
-    settingsCurrentMojangAccounts.innerHTML = mojangAuthAccountStr
+    settingsCurrentMedeviaAccounts.innerHTML = mojangAuthAccountStr
 }
 
 /**
