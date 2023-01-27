@@ -11,7 +11,7 @@ let activity
 exports.initRPC = function(genSettings, servSettings, initialDetails = 'Waiting for Client..'){
     client = new Client({ transport: 'ipc' })
 
-    activity = {
+    activity = {                                        //TODO (discord)
         details: initialDetails,
         state: 'Server: ' + servSettings.shortId,
         largeImageKey: servSettings.largeImageKey,

@@ -16,7 +16,7 @@ logger.info('Loading..')
 ConfigManager.load()
 
 // Load Strings
-LangLoader.loadLanguage('fr_FR')
+LangLoader.loadLanguage('en_US')
 
 function onDistroLoad(data){
     if(data != null){

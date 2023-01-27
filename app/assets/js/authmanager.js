@@ -9,7 +9,7 @@
  * @module authmanager
  */
 // Requirements
-const ConfigManager          = require('./configmanager')
+const ConfigManager          = require('./configmanager')                                                       //TODO (login)  this file need to be competly changed
 const { LoggerUtil }         = require('helios-core')
 const { RestResponseStatus } = require('helios-core/common')
 const { MojangRestAPI, mojangErrorDisplayable, MojangErrorCode } = require('helios-core/mojang')

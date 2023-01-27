@@ -5,7 +5,7 @@
 const cp                      = require('child_process')
 const crypto                  = require('crypto')
 const { URL }                 = require('url')
-const { MojangRestAPI, getServerStatus }     = require('helios-core/mojang')
+const { MojangRestAPI, getServerStatus }     = require('helios-core/mojang')     //Note this is for mojang status , not for login
 
 // Internal Requirements
 const DiscordWrapper          = require('./assets/js/discordwrapper')
@@ -341,7 +341,7 @@ function asyncSystemScan(mcVersion, launchAfter = true){
                 setDismissHandler(() => {
                     $('#overlayContent').fadeOut(250, () => {
                         //$('#overlayDismiss').toggle(false)
-                        setOverlayContent(
+                        setOverlayContent(                                                      //TODO (translation)
                             'Java is Required<br>to Launch',
                             `A valid x64 installation of Java ${javaVer} is required to launch.<br><br>Please refer to our <a href="https://github.com/dscalzi/HeliosLauncher/wiki/Java-Management#manually-installing-a-valid-version-of-java">Java Management Guide</a> for instructions on how to manually install Java.`,
                             'I Understand',
@@ -695,7 +695,7 @@ function dlAsync(login = true){
                     data = data.trim()
                     if(data.indexOf('Could not find or load main class net.minecraft.launchwrapper.Launch') > -1){
                         loggerLaunchSuite.error('Game launch failed, LaunchWrapper was not downloaded properly.')
-                        showLaunchFailure('Error During Launch', 'The main file, LaunchWrapper, failed to download properly. As a result, the game cannot launch.<br><br>To fix this issue, temporarily turn off your antivirus software and launch the game again.<br><br>If you have time, please <a href="https://github.com/dscalzi/HeliosLauncher/issues">submit an issue</a> and let us know what antivirus software you use. We\'ll contact them and try to straighten things out.')
+                        showLaunchFailure('Error During Launch', 'The main file, LaunchWrapper, failed to download properly. As a result, the game cannot launch.<br><br>To fix this issue, temporarily turn off your antivirus software and launch the game again.<br><br>If you have time, please <a href="https://github.com/dscalzi/HeliosLauncher/issues">submit an issue</a> and let us know what antivirus software you use. We\'ll contact them and try to straighten things out.')     //TODO (important) (translation)
                     }
                 }
 

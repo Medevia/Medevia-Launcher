@@ -13,6 +13,16 @@ const Lang          = require('./assets/js/langloader')
 let rscShouldLoad = false
 let fatalStartupError = false
 
+// Mapping of each view to their container IDs.
+const VIEWS = {
+    landing: '#landingContainer',
+    loginOptions: '#loginOptionsContainer',
+    login: '#loginContainer',
+    settings: '#settingsContainer',
+    welcome: '#welcomeContainer',
+    waiting: '#waitingContainer'
+}
+
 // The currently shown view container.
 let currentView
 
